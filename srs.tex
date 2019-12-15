@@ -1,0 +1,299 @@
+%Copyright 2014 Jean-Philippe Eisenbarth
+%This program is free software: you can 
+%redistribute it and/or modify it under the terms of the GNU General Public 
+%License as published by the Free Software Foundation, either version 3 of the 
+%License, or (at your option) any later version.
+%This program is distributed in the hope that it will be useful,but WITHOUT ANY 
+%WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A 
+%PARTICULAR PURPOSE. See the GNU General Public License for more details.
+%You should have received a copy of the GNU General Public License along with 
+%this program.  If not, see <http://www.gnu.org/licenses/>.
+
+%Based on the code of Yiannis Lazarides
+%http://tex.stackexchange.com/questions/42602/software-requirements-specification-with-latex
+%http://tex.stackexchange.com/users/963/yiannis-lazarides
+%Also based on the template of Karl E. Wiegers
+%http://www.se.rit.edu/~emad/teaching/slides/srs_template_sep14.pdf
+%http://karlwiegers.com
+\documentclass{scrreprt}
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{underscore}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\hypersetup{
+    bookmarks=false,    % show bookmarks bar?
+    pdftitle={Software Requirement Specification},    % title
+    pdfauthor={Jean-Philippe Eisenbarth},                     % author
+    pdfsubject={TeX and LaTeX},                        % subject of the document
+    pdfkeywords={TeX, LaTeX, graphics, images}, % list of keywords
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=blue,       % color of internal links
+    citecolor=black,       % color of links to bibliography
+    filecolor=black,        % color of file links
+    urlcolor=purple,        % color of external links
+    linktoc=page            % only page is linked
+}%
+\def\myversion{1.0 }
+\date{}
+%\title{%
+
+%}
+
+% set new counter
+\newcounter{descriptcount}
+\renewcommand*\thedescriptcount{\alph{descriptcount}}
+
+%Set subsection in subsection
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+
+
+
+
+\usepackage{hyperref}
+\begin{document}
+
+\begin{flushright}
+    \rule{16cm}{5pt}\vskip1cm
+    \begin{bfseries}
+        \Huge{SOFTWARE REQUIREMENTS\\ SPECIFICATION}\\
+        \vspace{1.9cm}
+        for\\
+        \vspace{1.9cm}
+        $<$Project$>$\\
+        \vspace{1.9cm}
+        \LARGE{Version \myversion approved}\\
+        \vspace{1.9cm}
+        Prepared by $<$author$>$\\
+        \vspace{1.9cm}
+        $<$Organization$>$\\
+        \vspace{1.9cm}
+        \today\\
+    \end{bfseries}
+\end{flushright}
+
+\tableofcontents
+
+
+\chapter*{Revision History}
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+	    Name & Date & Reason For Changes & Version\\
+        \hline
+	    21 & 22 & 23 & 24\\
+        \hline
+	    31 & 32 & 33 & 34\\
+        \hline
+    \end{tabular}
+\end{center}
+
+\chapter{Pendahuluan}
+
+\section{Tujuan}
+Dokumen ini berisi Spesifikasi Kebutuhan \emph{Software Requirement Spesification} (SRS) untuk Rancang Bangun Website Kuis Pilihan Ganda dengan pendekatan Waterfall Model. Tujuan dari penulisan dokumen ini adalah untuk memberikan penjelasan mengenai website yang akan dibangun baik berupa gambaran umum maupun pejelasan detil dan menyeluruh.
+Dengan adanya dokumen SKPL ini diharapkan pengembangan website akan lebih terarah dan lebih terfokus serta tidak menimbulkan ambiguitas terutama bagi pengembang website Kuis Pilihan Ganda ini.
+
+
+\section{Lingkup Masalah}
+Website yang akan dikembangkan adalah website Kuis Piliha Ganda, yaitu webiste yang digunakan untuk mempermudah bagi guru-guru dalam memberikan tugas, ataupun kuis bagi siswa-siswa nya selain itu website ini juga merupakan bentuk dari pengurangan penggunaan kertas disekolah sebagai partisipasi pelestarian hutan di Indonesia sendiri. Webiste ini dapat melakukan hal-hal berikut ini :
+	\begin{enumerate}
+		\item Fasilitas masuk (\emph{login}) kedalam sistem (\emph{website}) untuk, Admin, Tenaga Pengajar, dan Siswa,
+		\item Fasilitas pendaftaran untuk pengguna baru,
+		\item Menambah, mengubah, menghapus data pengguna sistem,
+		\item Menambah, mengubah, dan menghapus data kelas,
+		\item Menambah, mengubah, dan menghapus data mata pelajaran,
+		\item Menambah mengubah, dan menghapus data soal dan pembahasan,
+		\item Mengatur, menambah, mengubah dan menghapus hak akses bagi pengguna-pengguna sistem,
+		\item Menambah, mengubah dan menghapus pengumuman untuk siswa,
+		\item Data Menu sistem yang \emph{dinamis},
+		\item Pembatasan hak akses sistem kesetiap pengguna (Admin, Tenaga Pengajar, SIswa)
+		\item Mengubah data administrasi sekolah,
+		\item Mengubah data informasi sistem,
+		\item Mem\emph{backup} \emph{database} sistem,
+		\item Meng\emph{export} keformat pdf data pengguna, soal, kelas, dan mata pelajaran,
+		\item Informasi dasar terhadap kesehatan sistem
+	\end{enumerate}
+
+Dengan adanya sistem ini diharapkan dapat mempermudah dan membantu tenaga pengajar dalam memberikan latihan kepada siswa-siswanya, serta juga membantu melindungi hutan diIndonesia kita yang tercinta ini, menuju indonesia nikertas.
+
+\section{Definisi Akronim dan Singkatan}
+
+\begin{center}
+	\begin{tabular}{|>{\centering\arraybackslash}m{5cm}|>{\centering\arraybackslash}m{9cm}|}
+		\hline
+			Istilah,Akronim, dan Singkatan & Keterangan\\
+		\hline
+			Admin & Merupakan seseorang yang bertanggungjawab untuk perawatan sistem dan  serta bertanggungjawab terhadap operasional sistem.\\
+		\hline
+			\emph{Website} & \\
+		\hline
+			\emph{Web} & \\
+		\hline
+			\emph{Database} & \\
+		\hline
+			\emph{Backup} & \\
+		\hline
+			\emph{Export} & \\
+		\hline
+			\emph{Pdf} & \\
+		\hline
+			Sistem & \\
+		\hline
+	\end{tabular}
+\end{center}
+
+
+
+\section{Referensi}
+Dokumen-dokumen yang digunakan sebagai referensi dalam pembuatan \emph{SRS} ini adalah sebagai berikut:
+
+\begin{enumerate}
+	\item Dokumen : Menjelaskan tentang
+	\item Dokumen : Menjelaskan tentang
+	\item Dokumen : Menjelaskan tentang
+	\item Dokumen : Menjelaskan tentang
+	\item Dokumen : Menjelaskan tentang
+	\item Dokumen : Menjelaskan tentang
+\end{enumerate}
+
+
+
+
+\chapter{Deskripsi Umum}
+
+\section{Perspektif Produk}
+$<$Describe the context and origin of the product being specified in this SRS.  
+For example, state whether this product is a follow-on member of a product 
+family, a replacement for certain existing systems, or a new, self-contained 
+product. If the SRS defines a component of a larger system, relate the 
+requirements of the larger system to the functionality of this software and 
+identify interfaces between the two. A simple diagram that shows the major 
+components of the overall system, subsystem interconnections, and external 
+interfaces can be helpful.$>$
+
+\section{Fungsi Produk}
+$<$Summarize the major functions the product must perform or must let the user 
+perform. Details will be provided in Section 3, so only a high level summary 
+(such as a bullet list) is needed here. Organize the functions to make them 
+understandable to any reader of the SRS. A picture of the major groups of 
+related requirements and how they relate, such as a top level data flow diagram 
+or object class diagram, is often effective.$>$
+
+\section{Karakteristik Pengguna}
+$<$Identify the various user classes that you anticipate will use this product.  
+User classes may be differentiated based on frequency of use, subset of product 
+functions used, technical expertise, security or privilege levels, educational 
+level, or experience. Describe the pertinent characteristics of each user class.  
+Certain requirements may pertain only to certain user classes. Distinguish the 
+most important user classes for this product from those who are less important 
+to satisfy.$>$
+
+\section{Asumsi dan Ketergantunga}
+$<$Describe the environment in which the software will operate, including the 
+hardware platform, operating system and versions, and any other software 
+components or applications with which it must peacefully coexist.$>$
+
+
+
+\chapter{Deskripsi Rinci Kebutuhan}
+
+\section{Kebutuhan Antarmuka Eksternal}
+
+	\subsection{Antarmuka Pemakai}
+	
+	\blindtext[1]
+	
+	\subsection{Antarmuka Perangkat Keras}
+	
+	\blindtext[1]
+	
+	\subsection{Antarmuka Perangkat Lunak}
+	
+	\blindtext[1]
+	
+	\subsection{Antarmuka Komunikasi}
+	
+	\blindtext[1]
+	
+	
+
+
+
+\section{Kebutuhan Fungsionalitas}
+
+	\subsection{Fungsi Tenaga Pengajar}
+	
+	\blindtext[1]
+	
+	\subsection{Fungsi Tenaga Pengajar}
+	
+	\blindtext[1]
+	
+	\subsection{Fungsi Admin}
+	
+	\blindtext[1]
+	
+	
+\section{Performansi}
+\blindtext[1]
+
+	\subsection{Batasan Memori}
+	\blindtext[1]
+	
+\section{Atribut Kualitas Perangkat Lunak}
+
+	\subsection{Keandalan}
+	\blindtext[1]
+	
+	\subsection{Ketersediaan}
+	\blindtext[1]
+	
+	\subsection{Keamanan}
+	\blindtext[1]
+	
+	\subsection{Perawatan}
+	\blindtext[1]
+	
+	
+\section{Batasan Perancangan}
+
+\blindtext[1]
+	
+	\subsection{Perancangan Sitem}
+	\blindtext[1]
+	
+		\subsubsection{Flowchart}
+		
+		
+		\subsubsection{Tabel}
+		
+		
+		\subsubsection{UML}
+		
+		\begin{enumerate}
+			\item Use Case
+			\item Activity Diagram
+			\item Class Diagram
+			\item Sequence Diagram
+		\end{enumerate}
+	
+	\subsection{Rancangan User Interface}
+
+	
+
+
+\end{document}
