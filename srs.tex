@@ -24,6 +24,8 @@
 \usepackage[bookmarks=true]{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage{graphicx}
+\graphicspath{ {./gambar/} }
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
     pdftitle={Software Requirement Specification},    % title
@@ -176,36 +178,40 @@ Dokumen-dokumen yang digunakan sebagai referensi dalam pembuatan \emph{SRS} ini 
 \chapter{Deskripsi Umum}
 
 \section{Perspektif Produk}
-$<$Describe the context and origin of the product being specified in this SRS.  
-For example, state whether this product is a follow-on member of a product 
-family, a replacement for certain existing systems, or a new, self-contained 
-product. If the SRS defines a component of a larger system, relate the 
-requirements of the larger system to the functionality of this software and 
-identify interfaces between the two. A simple diagram that shows the major 
-components of the overall system, subsystem interconnections, and external 
-interfaces can be helpful.$>$
+\emph{Webiste} Kuis Pilihan Ganda ini, merupakan sebuah \emph{website} yang digunakan tenaga pengajar untuk memberikan latihan terhadap siswanya, \emph{website} ini juga bisa menjadi media pembelajaran jarak jauh karena setiap soal diikuti dengan pembahasan, hal ini tentu saja penting bagi siswa yang menginginkan penjelasan terhadap soal-soal yang telah ia kerjakan.
 
 \section{Fungsi Produk}
-$<$Summarize the major functions the product must perform or must let the user 
-perform. Details will be provided in Section 3, so only a high level summary 
-(such as a bullet list) is needed here. Organize the functions to make them 
-understandable to any reader of the SRS. A picture of the major groups of 
-related requirements and how they relate, such as a top level data flow diagram 
-or object class diagram, is often effective.$>$
+\emph{Website} Kuis Pilihan Ganda ini mempunya dua fungsi utama, antara lain:
+\begin{enumerate}
+	\item Pengerjaan latihan bagi siswa,
+	\item Media pembelajaran jarak jauh,
+\end{enumerate}
 
 \section{Karakteristik Pengguna}
-$<$Identify the various user classes that you anticipate will use this product.  
-User classes may be differentiated based on frequency of use, subset of product 
-functions used, technical expertise, security or privilege levels, educational 
-level, or experience. Describe the pertinent characteristics of each user class.  
-Certain requirements may pertain only to certain user classes. Distinguish the 
-most important user classes for this product from those who are less important 
-to satisfy.$>$
+Karakteristik pengguna dari \emph{website} ini, dijelaskan sebagaimana berikut:
+\begin{enumerate}
+	\item Admin : Orang yang mempunyai hak akses penuh terhadap \emph{website}, me\emph{maintenance database}, me\emph{manage} hak akses terhadap \emph{website},
+	\item Tenaga Pengajar : Orang yang mempunyai akses terhadap peng\emph{input}an soal dan pembahasan, juga mempunyai hak akses terhadap hasil dan jawaban dari siswa,
+	\item Siswa : Orang yang mempunyai hak akses untuk mengerjakan latihan yang diberikan berdasarkan kelas siswa saat ini 
+\end{enumerate}
 
-\section{Asumsi dan Ketergantunga}
-$<$Describe the environment in which the software will operate, including the 
-hardware platform, operating system and versions, and any other software 
-components or applications with which it must peacefully coexist.$>$
+\section{Batasan-Batasan}
+Beberapa batasan-batasan didalam \emph{website} ini, antara lain:
+\begin{enumerate}
+	\item \emph{Webiste} ini bersifat online dan bisa diakses selama ada jaringan \emph{internet},
+	\item \emph{Webiste} dibangun menggunakan \emph{framework Codeigniter} yang mengunakan bahasa pemrograman Php disisi server dan mengunakan \emph{framework Bootstrap} disisi tampilan,
+	\item Pendaftaran ke dalam \emph{website} secara otomatis akan mendapatkan hak akses sebagai siswa, sekalipun yang daftar adalah tenaga pengajar, pengubahan hak akses dilakukan oleh admin,
+	\item Siswa harus mengisi secara manual data-data pribadi maupun administrasinya  
+\end{enumerate}
+
+
+\section{Asumsi dan Ketergantungan}
+Asumsi pada sistem informasi Kuis Pilihan Ganda ini adalah:
+\begin{enumerate}
+	\item Setiap pengguna mempunyai hak akses tersendiri terhadap sistem,
+	\item Tenaga pengajar tidak punya hak akses terhadap data-data admin sistem,
+	\item Siswa hanya bisa melakukan sekali pengerjaan latihan,
+\end{enumerate}
 
 
 
@@ -215,19 +221,15 @@ components or applications with which it must peacefully coexist.$>$
 
 	\subsection{Antarmuka Pemakai}
 	
-	\blindtext[1]
-	
+	Sistem ini mengunakan antarmuka berbasis \emph{web}, dan pengguna mengoperasikannya menggunakan \emph{keyboard} dan \emph{mouse} dengan sistem operasi \emph{windows} maupun \emph{linux}, serta dapat diakses melalui \emph{smartphone} walaupun dianjurkan menggunakan \emph{desktop}.
 	\subsection{Antarmuka Perangkat Keras}
-	
-	\blindtext[1]
-	
+	Sistem ini berjalan diatas \emph{server} yang di\emph{hosting} melalui jaringan \emph{internet}, sistem ini berkomunikasi dengan protokol \emph{Https}, dimana file-file sistem akan dikelola oleh admin \emph{server}.
 	\subsection{Antarmuka Perangkat Lunak}
-	
-	\blindtext[1]
+	Sistem ini dibangun mengunakan bahasa pemrograman PHP dengan memanfaatkan \emph{framework Codeigniter} yang berjalan disisi \emph{Server}, \emph{framework Bootstrap} yang berjalan disisi tampilan (\emph{end-user}), serta \emph{Database Management System MySQL} sebagai wadah penyimpanan data, sistem ini akan berjalan disemua sistem operasi, disisi pengguna (\emph{end-user}) hanya dibutuhkan sebuah \emph{web browser} dan akses ke jaringan \emph{internet}. 
 	
 	\subsection{Antarmuka Komunikasi}
 	
-	\blindtext[1]
+	Sistem \emph{SSL-128} merupakan sistem sertifkasi jaringan internet untuk menjaga keamanan bertransaksi, sistem ini akan mengenkripsi data transaksi yang dilakukan
 	
 	
 
@@ -235,54 +237,105 @@ components or applications with which it must peacefully coexist.$>$
 
 \section{Kebutuhan Fungsionalitas}
 
+	\subsection{Fungsi Siswa}
+	\begin{enumerate}
+		\item Siswa hanya diperbolehkan \emph{login} kedalam sistem ketika sudah terdaftar
+		\item Jika siswa belum terdaftar maka siswa bisa mendaftarkan dirinya
+		\item Siswa hanya bisa mengerjakan satu kali latihan untuk tiap-tiap mata pelajaran
+		\item Siswa bisa melihat jawabannya serta jawaban yang benar dan pembahasan untuk tiap-tiap soal
+		\item Siswa bisa melihat jumlah jawaban yang benar dari jawabannya dan meng\emph{export}nya kedalam bentuk file \emph{pdf}
+		\item Siswa bisa melihat pengumuman
+	\end{enumerate}
+	
 	\subsection{Fungsi Tenaga Pengajar}
 	
-	\blindtext[1]
-	
-	\subsection{Fungsi Tenaga Pengajar}
-	
-	\blindtext[1]
+	\begin{enumerate}
+		\item Tenaga pengajar hanya bisa \emph{login} kesistem jika sudah terdaftar, jika belum terdaftar maka tenaga pengajar bisa mendaftarkan dirinya dan meminta admin sistem untuk mengubah hak aksesnya,
+		\item Tenaga pengajar bisa menambah, mengubah, dan menghapus soal untuk tiap-tipa mata pelajaran ke tiap-tiap kelas,
+		\item Tenaga pengajar bisa mengubah pembahasan untuk tiap-tiap soal,
+		\item Tenaga pengajar bisa menambah, mengubah dan menghapus pengumuman untuk tiap-tiap kelas,
+		\item Tenaga pengajar bisa melihat hasil dan jawaban dari latihan yang dikerjakan siswa berdasarkan kelas dan mata pelajarannya,
+	\end{enumerate}
 	
 	\subsection{Fungsi Admin}
 	
-	\blindtext[1]
-	
+	\begin{enumerate}
+		\item Admin mempunyai hak akses penuh terhadap sistem,
+		\item Admin bisa mengubah, menambah dan menghapus pengguna untuk sistem baik itu tenaga pengajar maupun siswa,
+		\item Admin mampu mengatur dan mengelola hak akses terhadap sistem,
+		\item Admin mempunyai akses terhadap data administrasi sekolah, dan sistem,
+		\item Admin bisa mem\emph{backup database},
+		\item Admin bisa melihat \emph{file-file} yang ada di \emph{server}
+	\end{enumerate}
 	
 \section{Performansi}
-\blindtext[1]
+Tidak ada batasan performansi karena kemampuan perangkat lunak yang digunakan telah memadai.
 
 	\subsection{Batasan Memori}
-	\blindtext[1]
+	Besarnya memori yang dibutuhkan untuk menjalankan sistem ini, adalah sama dengan besarnya jumlah memori yang digunakan untuk menjalankan sebuah \emph{web browser} serta besar harddisk yang mampu menampung instalasi sebuah \emph{web browser}
 	
 \section{Atribut Kualitas Perangkat Lunak}
 
 	\subsection{Keandalan}
-	\blindtext[1]
+	Sistem ini dapat dikunjungi kapan saja selama ada akses ke jaringan \emph{internet} dan bisa melalui sistem operasi apa aja.
 	
 	\subsection{Ketersediaan}
-	\blindtext[1]
+	Sistem ini dapat berjalan dan tersedia kapanpun selama tidak ada kendala disisi \emph{server} dan pengguna \emph{end-user} mempunyai akses terhadap jaringan \emph{internet}.
 	
 	\subsection{Keamanan}
-	\blindtext[1]
+	Admin, tenaga pengajar, dan siswa harus melakukan \emph{login} untuk dapat mengakses sistem, dimana setiap pengguna mempunyai kata sandi yang diekripsi otomatis oleh sistem, serta tiap-tiap pengguna mempunyai hak aksesnya masing-masing untuk mengakses menu, sehingga apa yang menjadi menu-menu dibagian admin tidak akan ada di bagian siswa, begitu juga dengan tenaga pengajar, lebih jauh lagi sistem ini tidak rentan terhadap \emph{Sql Injection} maupun \emph{Xss Injection}. 
 	
 	\subsection{Perawatan}
-	\blindtext[1]
+	Sistem Informasi Kuis Pilihan Ganda ini dibuat dengan full parameter dan dinamis, sehingga semua data dan informasi didalamnya dapat di\emph{update} kapan saja sesuai kebutuhan.
 	
 	
 \section{Batasan Perancangan}
-
-\blindtext[1]
+Sistem ini akan diimplementasikan kedalam sistem server berbasis\emph{apache}, mengunakan bahasa pemrograman Php.
 	
 	\subsection{Perancangan Sitem}
-	\blindtext[1]
 	
 		\subsubsection{Flowchart}
+			\centering
+				\includegraphics[width=15cm, height=18cm]{FlowChart.jpg}
 		
 		
 		\subsubsection{Tabel}
+			\centering
+				\includegraphics[width=17cm, height=15cm]{database-wbt.png}
 		
 		
 		\subsubsection{UML}
+		
+		\begin{figure}
+			\includegraphics[width=18cm, height=20cm]{usecase-admin.jpg}
+			\caption{Use Case Bagian Admin.}
+		\end{figure}
+	
+		\begin{figure}
+			\includegraphics[width=18cm, height=20cm]{usecase-tenaga-pengajar.jpg}
+			\caption{Use Case Bagian Tenaga Pengajar}
+		\end{figure}
+	
+		\begin{figure}
+			\includegraphics[width=18cm, height=20cm]{usecase-siswa.jpg}
+			\caption{Use Case Bagian Siswa}
+		\end{figure}
+	
+	
+		\begin{figure}
+			\includegraphics[width=15cm, height=20cm]{Activity-diagram-login.png}
+			\caption{Activity Diagram \emph{Login}}
+		\end{figure}
+	
+		\begin{figure}
+			\includegraphics[width=15cm, height=20cm]{Activity-diagram-penambahan-soal.png}
+			\caption{Activity Diagram Penambahan Soal}
+		\end{figure}
+	
+		\begin{figure}
+			\includegraphics[width=15cm, height=20cm]{Activity-diagram-latihan.png}
+			\caption{Activity Diagram Pengerjaan Soal}
+		\end{figure}
 		
 		\begin{enumerate}
 			\item Use Case
