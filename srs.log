@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.30)  16 DEC 2019 07:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.30)  16 DEC 2019 08:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -351,9 +351,9 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 41.
+(hyperref)                setting the option has no effect on input line 42.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 41.
+Package hyperref Info: Option `colorlinks' set `true' on input line 42.
 \c@descriptcount=\count130
 
 Class scrreprt Warning: Usage of package `titlesec' together
@@ -364,7 +364,7 @@ Class scrreprt Warning: Usage of package `titlesec' together
 (scrreprt)              the extended optional argument of the section
 (scrreprt)              commands.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `titlesec' on input line 54.
+(scrreprt)              package `titlesec' on input line 55.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
@@ -401,25 +401,25 @@ Package titlesec Warning: Non standard sectioning command detected
 )
 
 Class scrreprt Warning: Activating an ugly workaround for a missing
-(scrreprt)              feature of package `titlesec` on input line 54.
+(scrreprt)              feature of package `titlesec` on input line 55.
 
 (./srs.aux)
 \openout1 = `srs.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
 \c@lstlisting=\count131
 \AtBeginShipoutBox=\box35
  (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
@@ -430,7 +430,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 68.
+Package hyperref Info: Link coloring ON on input line 69.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -440,9 +440,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 68.
-LaTeX Info: Redefining \pageref on input line 68.
-LaTeX Info: Redefining \nameref on input line 68.
+LaTeX Info: Redefining \ref on input line 69.
+LaTeX Info: Redefining \pageref on input line 69.
+LaTeX Info: Redefining \nameref on input line 69.
 
 (./srs.out) (./srs.out)
 \@outlinefile=\write3
@@ -454,7 +454,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           You can avoid loading `bookmark' with KOMA-Script option
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message with `\usepackage{bookmark}'
-(scrreprt)           before \begin{document} on input line 68.
+(scrreprt)           before \begin{document} on input line 69.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
@@ -496,22 +496,14 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Overfull \hbox (36.98853pt too wide) in paragraph at lines 71--71
+Overfull \hbox (36.98853pt too wide) in paragraph at lines 72--72
  []
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <24.88> on input line 77.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <20.74> on input line 77.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 77.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 81.
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./srs.toc
+[2] (./srs.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -522,9 +514,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `srs.toc'.
 
- [2
+ [3
 
-] [3
+] [4
 
 ]
 chapter 1.
@@ -544,180 +536,239 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface .
 
 
-Overfull \hbox (11.92796pt too wide) in paragraph at lines 122--123
+Overfull \hbox (11.92796pt too wide) in paragraph at lines 128--129
 []\OT1/cmr/m/n/10.95 Mengatur, menam-bah, men-gubah dan meng-ha-pus hak ak-ses 
 bagi pengguna-pengguna
  []
 
-[4
+[5
 
 ]
-Overfull \hbox (5.283pt too wide) in paragraph at lines 138--159
+Overfull \hbox (5.283pt too wide) in paragraph at lines 144--165
  [] 
  []
 
-[5]
+[6]
 chapter 2.
 
-Overfull \hbox (3.47739pt too wide) in paragraph at lines 193--194
+Overfull \hbox (3.47739pt too wide) in paragraph at lines 195--196
 []\OT1/cmr/m/n/10.95 Admin : Orang yang mem-pun-yai hak ak-ses penuh ter-hadap 
 \OT1/cmr/m/it/10.95 web-site\OT1/cmr/m/n/10.95 , me\OT1/cmr/m/it/10.95 maintena
 nce
  []
 
 
-Overfull \hbox (5.41881pt too wide) in paragraph at lines 195--196
+Overfull \hbox (5.41881pt too wide) in paragraph at lines 197--198
 []\OT1/cmr/m/n/10.95 Siswa : Orang yang mem-pun-yai hak ak-ses un-tuk menger-ja
 kan lati-han yang diberikan
  []
 
-[6
+[7
 
-] [7]
+] [8]
 chapter 3.
 
-Overfull \hbox (1.60872pt too wide) in paragraph at lines 246--247
+Overfull \hbox (1.60872pt too wide) in paragraph at lines 248--249
 []\OT1/cmr/m/n/10.95 Siswa bisa meli-hat jum-lah jawa-ban yang be-nar dari jawa
 -ban-nya dan meng\OT1/cmr/m/it/10.95 export\OT1/cmr/m/n/10.95 nya
  []
 
-[8
+[9
 
-] [9]
-<./gambar/FlowChart.jpg, id=162, 564.1075pt x 1025.8325pt>
+] [10]
+<./gambar/FlowChart.jpg, id=164, 564.1075pt x 1025.8325pt>
 File: ./gambar/FlowChart.jpg Graphic file (type jpg)
 <use ./gambar/FlowChart.jpg>
-Package pdftex.def Info: ./gambar/FlowChart.jpg  used on input line 299.
+Package pdftex.def Info: ./gambar/FlowChart.jpg  used on input line 301.
 (pdftex.def)             Requested size: 426.79805pt x 512.14801pt.
 
-Overfull \hbox (8.5425pt too wide) in paragraph at lines 299--300
+Overfull \hbox (8.5425pt too wide) in paragraph at lines 301--302
  [] 
  []
 
-[10]
-<./gambar/database-wbt.png, id=167, 1387.1825pt x 1059.96pt>
+[11]
+<./gambar/database-wbt.png, id=169, 1387.1825pt x 1059.96pt>
 File: ./gambar/database-wbt.png Graphic file (type png)
 <use ./gambar/database-wbt.png>
-Package pdftex.def Info: ./gambar/database-wbt.png  used on input line 304.
+Package pdftex.def Info: ./gambar/database-wbt.png  used on input line 306.
 (pdftex.def)             Requested size: 483.70082pt x 426.79071pt.
 
-Overfull \hbox (65.44527pt too wide) in paragraph at lines 304--305
+Overfull \hbox (65.44527pt too wide) in paragraph at lines 306--307
  [] 
  []
 
-[11 <./gambar/FlowChart.jpg>]
-<./gambar/usecase-admin.jpg, id=175, 1134.2375pt x 2407.99625pt>
+[12 <./gambar/FlowChart.jpg>] [13 <./gambar/database-wbt.png>]
+<./gambar/usecase-admin.jpg, id=183, 1134.2375pt x 2407.99625pt>
 File: ./gambar/usecase-admin.jpg Graphic file (type jpg)
 <use ./gambar/usecase-admin.jpg>
-Package pdftex.def Info: ./gambar/usecase-admin.jpg  used on input line 310.
+Package pdftex.def Info: ./gambar/usecase-admin.jpg  used on input line 313.
 (pdftex.def)             Requested size: 512.16748pt x 569.03911pt.
 
-Overfull \hbox (93.91193pt too wide) in paragraph at lines 310--311
-[][] 
+Overfull \hbox (93.91193pt too wide) in paragraph at lines 313--314
+[] 
  []
 
 
-LaTeX Warning: Float too large for page by 0.91888pt on input line 312.
+LaTeX Warning: Float too large for page by 22.59073pt on input line 315.
 
-<./gambar/usecase-tenaga-pengajar.jpg, id=176, 1170.3725pt x 1138.2525pt>
+<./gambar/usecase-tenaga-pengajar.jpg, id=184, 1170.3725pt x 1138.2525pt>
 File: ./gambar/usecase-tenaga-pengajar.jpg Graphic file (type jpg)
 <use ./gambar/usecase-tenaga-pengajar.jpg>
 Package pdftex.def Info: ./gambar/usecase-tenaga-pengajar.jpg  used on input li
-ne 315.
+ne 318.
 (pdftex.def)             Requested size: 512.16173pt x 569.07275pt.
 
-Overfull \hbox (93.90617pt too wide) in paragraph at lines 315--316
+Overfull \hbox (93.90617pt too wide) in paragraph at lines 318--319
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 0.95253pt on input line 317.
+LaTeX Warning: Float too large for page by 0.95253pt on input line 320.
 
-<./gambar/usecase-siswa.jpg, id=177, 715.67375pt x 1159.33125pt>
+<./gambar/usecase-siswa.jpg, id=185, 715.67375pt x 1159.33125pt>
 File: ./gambar/usecase-siswa.jpg Graphic file (type jpg)
 <use ./gambar/usecase-siswa.jpg>
-Package pdftex.def Info: ./gambar/usecase-siswa.jpg  used on input line 320.
+Package pdftex.def Info: ./gambar/usecase-siswa.jpg  used on input line 323.
 (pdftex.def)             Requested size: 512.17242pt x 569.05023pt.
 
-Overfull \hbox (93.91687pt too wide) in paragraph at lines 320--321
+Overfull \hbox (93.91687pt too wide) in paragraph at lines 323--324
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 0.93001pt on input line 322.
+LaTeX Warning: Float too large for page by 0.93001pt on input line 325.
 
-<./gambar/Activity-diagram-login.png, id=178, 473.77pt x 437.635pt>
+<./gambar/Activity-diagram-login.png, id=186, 473.77pt x 437.635pt>
 File: ./gambar/Activity-diagram-login.png Graphic file (type png)
 <use ./gambar/Activity-diagram-login.png>
 Package pdftex.def Info: ./gambar/Activity-diagram-login.png  used on input lin
-e 326.
+e 329.
 (pdftex.def)             Requested size: 426.80112pt x 569.06566pt.
 
-Overfull \hbox (8.54556pt too wide) in paragraph at lines 326--327
+Overfull \hbox (8.54556pt too wide) in paragraph at lines 329--330
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 0.94543pt on input line 328.
+LaTeX Warning: Float too large for page by 0.94543pt on input line 331.
 
-<./gambar/Activity-diagram-penambahan-soal.png, id=179, 376.40625pt x 481.8pt>
+<./gambar/Activity-diagram-penambahan-soal.png, id=187, 376.40625pt x 481.8pt>
 File: ./gambar/Activity-diagram-penambahan-soal.png Graphic file (type png)
 <use ./gambar/Activity-diagram-penambahan-soal.png>
 Package pdftex.def Info: ./gambar/Activity-diagram-penambahan-soal.png  used on
- input line 331.
+ input line 334.
 (pdftex.def)             Requested size: 426.82166pt x 569.1072pt.
 
-Overfull \hbox (8.5661pt too wide) in paragraph at lines 331--332
+Overfull \hbox (8.5661pt too wide) in paragraph at lines 334--335
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 0.98697pt on input line 333.
+LaTeX Warning: Float too large for page by 0.98697pt on input line 336.
 
-<./gambar/Activity-diagram-latihan.png, id=180, 467.7475pt x 438.63875pt>
+<./gambar/Activity-diagram-latihan.png, id=188, 467.7475pt x 438.63875pt>
 File: ./gambar/Activity-diagram-latihan.png Graphic file (type png)
 <use ./gambar/Activity-diagram-latihan.png>
 Package pdftex.def Info: ./gambar/Activity-diagram-latihan.png  used on input l
-ine 336.
+ine 339.
 (pdftex.def)             Requested size: 426.81424pt x 569.0657pt.
 
-Overfull \hbox (8.55869pt too wide) in paragraph at lines 336--337
+Overfull \hbox (8.55869pt too wide) in paragraph at lines 339--340
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 0.94548pt on input line 338.
+LaTeX Warning: Float too large for page by 0.94548pt on input line 341.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
-[12 <./gambar/database-wbt.png>] [13 <./gambar/usecase-admin.jpg>] [14 <./gamba
-r/usecase-tenaga-pengajar.jpg>] [15 <./gambar/usecase-siswa.jpg>] [16 <./gambar
-/Activity-diagram-login.png>] [17 <./gambar/Activity-diagram-penambahan-soal.pn
-g>] [18 <./gambar/Activity-diagram-latihan.png>] [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
+<./gambar/Class-diagram-wbt.png, id=189, 1016.79875pt x 1047.915pt>
+File: ./gambar/Class-diagram-wbt.png Graphic file (type png)
+<use ./gambar/Class-diagram-wbt.png>
+Package pdftex.def Info: ./gambar/Class-diagram-wbt.png  used on input line 345
+.
+(pdftex.def)             Requested size: 426.78882pt x 569.06364pt.
+
+Overfull \hbox (8.53326pt too wide) in paragraph at lines 345--346
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 0.94342pt on input line 347.
+
+<./gambar/Sequence-diagram.png, id=190, 692.5875pt x 764.8575pt>
+File: ./gambar/Sequence-diagram.png Graphic file (type png)
+<use ./gambar/Sequence-diagram.png>
+Package pdftex.def Info: ./gambar/Sequence-diagram.png  used on input line 350.
+
+(pdftex.def)             Requested size: 483.70886pt x 569.07843pt.
+
+Overfull \hbox (65.45331pt too wide) in paragraph at lines 350--351
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 0.9582pt on input line 352.
+
+<./gambar/admin2.png, id=191, 1279.78125pt x 696.6025pt>
+File: ./gambar/admin2.png Graphic file (type png)
+<use ./gambar/admin2.png>
+Package pdftex.def Info: ./gambar/admin2.png  used on input line 355.
+(pdftex.def)             Requested size: 483.7052pt x 284.52469pt.
+
+Overfull \hbox (65.44965pt too wide) in paragraph at lines 355--356
+[][] 
+ []
+
+<./gambar/tenaga-pengajar.png, id=192, 1284.8pt x 703.62875pt>
+File: ./gambar/tenaga-pengajar.png Graphic file (type png)
+<use ./gambar/tenaga-pengajar.png>
+Package pdftex.def Info: ./gambar/tenaga-pengajar.png  used on input line 360.
+(pdftex.def)             Requested size: 483.70045pt x 284.52788pt.
+
+Overfull \hbox (65.4449pt too wide) in paragraph at lines 360--361
+[][] 
+ []
+
+<./gambar/siswa.png, id=193, 1283.79625pt x 695.59875pt>
+File: ./gambar/siswa.png Graphic file (type png)
+<use ./gambar/siswa.png>
+Package pdftex.def Info: ./gambar/siswa.png  used on input line 365.
+(pdftex.def)             Requested size: 483.69475pt x 284.52866pt.
+
+Overfull \hbox (65.4392pt too wide) in paragraph at lines 365--366
+[][] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 372.
+[14 <./gambar/usecase-admin.jpg>] [15 <./gambar/usecase-tenaga-pengajar.jpg>]
+[16 <./gambar/usecase-siswa.jpg>] [17 <./gambar/Activity-diagram-login.png>]
+[18 <./gambar/Activity-diagram-penambahan-soal.png>] [19 <./gambar/Activity-dia
+gram-latihan.png>] [20 <./gambar/Class-diagram-wbt.png>] [21 <./gambar/Sequence
+-diagram.png>] [22 <./gambar/admin2.png>] [23 <./gambar/tenaga-pengajar.png>]
+[24 <./gambar/siswa.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 372.
  (./srs.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 352.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 352.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 372.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 372.
 Package rerunfilecheck Info: File `srs.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 352.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 372.
  ) 
 Here is how much of TeX's memory you used:
- 10373 strings out of 492616
- 167040 string characters out of 6129480
- 392965 words of memory out of 5000000
- 14072 multiletter control sequences out of 15000+600000
- 12783 words of font info for 44 fonts, out of 8000000 for 9000
+ 10384 strings out of 492616
+ 167466 string characters out of 6129480
+ 392966 words of memory out of 5000000
+ 14075 multiletter control sequences out of 15000+600000
+ 9128 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,8n,66p,9104b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on srs.pdf (19 pages, 771235 bytes).
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on srs.pdf (24 pages, 985258 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 328 compressed objects within 4 object streams
- 116 named destinations out of 1000 (max. 500000)
- 289 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 389 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 306 words of extra memory for PDF output out of 10000 (max. 10000000)
 

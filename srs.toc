@@ -1,35 +1,34 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Pendahuluan}{4}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Tujuan}{4}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Lingkup Masalah}{4}{section.1.2}% 
-\contentsline {section}{\numberline {1.3}Definisi Akronim dan Singkatan}{5}{section.1.3}% 
-\contentsline {section}{\numberline {1.4}Referensi}{5}{section.1.4}% 
-\contentsline {chapter}{\numberline {2}Deskripsi Umum}{6}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Perspektif Produk}{6}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Fungsi Produk}{6}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Karakteristik Pengguna}{6}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Batasan-Batasan}{6}{section.2.4}% 
-\contentsline {section}{\numberline {2.5}Asumsi dan Ketergantungan}{7}{section.2.5}% 
-\contentsline {chapter}{\numberline {3}Deskripsi Rinci Kebutuhan}{8}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Kebutuhan Antarmuka Eksternal}{8}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Antarmuka Pemakai}{8}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}Antarmuka Perangkat Keras}{8}{subsection.3.1.2}% 
-\contentsline {subsection}{\numberline {3.1.3}Antarmuka Perangkat Lunak}{8}{subsection.3.1.3}% 
-\contentsline {subsection}{\numberline {3.1.4}Antarmuka Komunikasi}{8}{subsection.3.1.4}% 
-\contentsline {section}{\numberline {3.2}Kebutuhan Fungsionalitas}{8}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Fungsi Siswa}{8}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Fungsi Tenaga Pengajar}{9}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Fungsi Admin}{9}{subsection.3.2.3}% 
-\contentsline {section}{\numberline {3.3}Performansi}{9}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Batasan Memori}{9}{subsection.3.3.1}% 
-\contentsline {section}{\numberline {3.4}Atribut Kualitas Perangkat Lunak}{10}{section.3.4}% 
-\contentsline {subsection}{\numberline {3.4.1}Keandalan}{10}{subsection.3.4.1}% 
-\contentsline {subsection}{\numberline {3.4.2}Ketersediaan}{10}{subsection.3.4.2}% 
-\contentsline {subsection}{\numberline {3.4.3}Keamanan}{10}{subsection.3.4.3}% 
-\contentsline {subsection}{\numberline {3.4.4}Perawatan}{10}{subsection.3.4.4}% 
-\contentsline {section}{\numberline {3.5}Batasan Perancangan}{10}{section.3.5}% 
-\contentsline {subsection}{\numberline {3.5.1}Perancangan Sitem}{11}{subsection.3.5.1}% 
-\contentsline {subsubsection}{\numberline {3.5.1.1}Flowchart}{11}{subsubsection.3.5.1.1}% 
-\contentsline {subsubsection}{\numberline {3.5.1.2}Tabel}{12}{subsubsection.3.5.1.2}% 
-\contentsline {subsubsection}{\numberline {3.5.1.3}UML}{12}{subsubsection.3.5.1.3}% 
-\contentsline {subsection}{\numberline {3.5.2}Rancangan User Interface}{19}{subsection.3.5.2}% 
+\contentsline {chapter}{\numberline {1}Pendahuluan}{5}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Tujuan}{5}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Lingkup Masalah}{5}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Definisi Akronim dan Singkatan}{6}{section.1.3}% 
+\contentsline {section}{\numberline {1.4}Referensi}{6}{section.1.4}% 
+\contentsline {chapter}{\numberline {2}Deskripsi Umum}{7}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Perspektif Produk}{7}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Fungsi Produk}{7}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Karakteristik Pengguna}{7}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Batasan-Batasan}{7}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Asumsi dan Ketergantungan}{8}{section.2.5}% 
+\contentsline {chapter}{\numberline {3}Deskripsi Rinci Kebutuhan}{9}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Kebutuhan Antarmuka Eksternal}{9}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Antarmuka Pemakai}{9}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Antarmuka Perangkat Keras}{9}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.3}Antarmuka Perangkat Lunak}{9}{subsection.3.1.3}% 
+\contentsline {subsection}{\numberline {3.1.4}Antarmuka Komunikasi}{9}{subsection.3.1.4}% 
+\contentsline {section}{\numberline {3.2}Kebutuhan Fungsionalitas}{9}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Fungsi Siswa}{9}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Fungsi Tenaga Pengajar}{10}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Fungsi Admin}{10}{subsection.3.2.3}% 
+\contentsline {section}{\numberline {3.3}Performansi}{10}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Batasan Memori}{10}{subsection.3.3.1}% 
+\contentsline {section}{\numberline {3.4}Atribut Kualitas Perangkat Lunak}{11}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}Keandalan}{11}{subsection.3.4.1}% 
+\contentsline {subsection}{\numberline {3.4.2}Ketersediaan}{11}{subsection.3.4.2}% 
+\contentsline {subsection}{\numberline {3.4.3}Keamanan}{11}{subsection.3.4.3}% 
+\contentsline {subsection}{\numberline {3.4.4}Perawatan}{11}{subsection.3.4.4}% 
+\contentsline {section}{\numberline {3.5}Batasan Perancangan}{11}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.5.1}Perancangan Sitem}{12}{subsection.3.5.1}% 
+\contentsline {subsubsection}{\numberline {3.5.1.1}Flowchart}{12}{subsubsection.3.5.1.1}% 
+\contentsline {subsubsection}{\numberline {3.5.1.2}Tabel}{13}{subsubsection.3.5.1.2}% 
+\contentsline {subsubsection}{\numberline {3.5.1.3}UML dan Rancangan User Interfaces}{14}{subsubsection.3.5.1.3}% 

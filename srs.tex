@@ -26,6 +26,7 @@
 \usepackage[english]{babel}
 \usepackage{graphicx}
 \graphicspath{ {./gambar/} }
+\renewcommand{\figurename}{Gambar.}
 \hypersetup{
     bookmarks=false,    % show bookmarks bar?
     pdftitle={Software Requirement Specification},    % title
@@ -74,31 +75,36 @@
         \vspace{1.9cm}
         for\\
         \vspace{1.9cm}
-        $<$Project$>$\\
+        Sistem Informasi Kuis Pilihan Ganda\\
         \vspace{1.9cm}
-        \LARGE{Version \myversion approved}\\
-        \vspace{1.9cm}
-        Prepared by $<$author$>$\\
-        \vspace{1.9cm}
-        $<$Organization$>$\\
-        \vspace{1.9cm}
-        \today\\
+        \LARGE{Versi \myversion approved}\\
+        
     \end{bfseries}
 \end{flushright}
+\newpage
+Disusun Oleh:
+\begin{enumerate}
+	\item Zaini (1701552010)
+	\item Sahrul Ramadhan Hakim (1701552010)
+	\item Fikri Wahyudi (170155201054)
+	\item Urai Angga S (170155201047)
+	\item Raja Azian (170155201010)
+\end{enumerate}
+
 
 \tableofcontents
 
 
-\chapter*{Revision History}
+\chapter*{Data Revisi}
 
 \begin{center}
     \begin{tabular}{|c|c|c|c|}
         \hline
-	    Name & Date & Reason For Changes & Version\\
+	    Nama & Tanggal & Alasan Perubahan & Versi\\
         \hline
-	    21 & 22 & 23 & 24\\
+	     &  &  & \\
         \hline
-	    31 & 32 & 33 & 34\\
+	     &  &  & \\
         \hline
     \end{tabular}
 \end{center}
@@ -141,19 +147,19 @@ Dengan adanya sistem ini diharapkan dapat mempermudah dan membantu tenaga pengaj
 		\hline
 			Admin & Merupakan seseorang yang bertanggungjawab untuk perawatan sistem dan  serta bertanggungjawab terhadap operasional sistem.\\
 		\hline
-			\emph{Website} & \\
+			\emph{Website} & Halam Sistem Informasi\\
 		\hline
-			\emph{Web} & \\
+			\emph{Web} & Singkatan dari \emph{website}\\
 		\hline
-			\emph{Database} & \\
+			\emph{Database} & Tempat penyimpanan data\\
 		\hline
-			\emph{Backup} & \\
+			\emph{Backup} &Mencadangkan \\
 		\hline
-			\emph{Export} & \\
+			\emph{Export} & Mencetak dalam bentuk dokumen\\
 		\hline
-			\emph{Pdf} & \\
+			\emph{Pdf} & File hasil \emph{export}\\
 		\hline
-			Sistem & \\
+			Sistem & Tempat segala proses dari \emph{wesite}\\
 		\hline
 	\end{tabular}
 \end{center}
@@ -164,12 +170,8 @@ Dengan adanya sistem ini diharapkan dapat mempermudah dan membantu tenaga pengaj
 Dokumen-dokumen yang digunakan sebagai referensi dalam pembuatan \emph{SRS} ini adalah sebagai berikut:
 
 \begin{enumerate}
-	\item Dokumen : Menjelaskan tentang
-	\item Dokumen : Menjelaskan tentang
-	\item Dokumen : Menjelaskan tentang
-	\item Dokumen : Menjelaskan tentang
-	\item Dokumen : Menjelaskan tentang
-	\item Dokumen : Menjelaskan tentang
+	\item Dokumen1 : Menjelaskan tentang database sistem
+	\item Dokumen2 : Menjelaskan tentang data-data sekolah
 \end{enumerate}
 
 
@@ -303,10 +305,11 @@ Sistem ini akan diimplementasikan kedalam sistem server berbasis\emph{apache}, m
 			\centering
 				\includegraphics[width=17cm, height=15cm]{database-wbt.png}
 		
+		\newpage
 		
-		\subsubsection{UML}
 		
 		\begin{figure}
+			\subsubsection{UML dan Rancangan User Interfaces}
 			\includegraphics[width=18cm, height=20cm]{usecase-admin.jpg}
 			\caption{Use Case Bagian Admin.}
 		\end{figure}
@@ -336,15 +339,32 @@ Sistem ini akan diimplementasikan kedalam sistem server berbasis\emph{apache}, m
 			\includegraphics[width=15cm, height=20cm]{Activity-diagram-latihan.png}
 			\caption{Activity Diagram Pengerjaan Soal}
 		\end{figure}
-		
-		\begin{enumerate}
-			\item Use Case
-			\item Activity Diagram
-			\item Class Diagram
-			\item Sequence Diagram
-		\end{enumerate}
 	
-	\subsection{Rancangan User Interface}
+	
+		\begin{figure}
+			\includegraphics[width=15cm, height=20cm]{Class-diagram-wbt.png}
+			\caption{Class Diagram}
+		\end{figure}
+
+		\begin{figure}
+			\includegraphics[width=17cm, height=20cm]{Sequence-diagram.png}
+			\caption{Sequence Diagram}
+		\end{figure}		
+		
+		\begin{figure}
+			\includegraphics[width=17cm, height=10cm]{admin2.png}
+			\caption{\emph{User Interface} Bagian Admin}
+		\end{figure}	
+	
+		\begin{figure}
+			\includegraphics[width=17cm, height=10cm]{tenaga-pengajar.png}
+			\caption{\emph{User Interface} Bagian Tenaga Pengajar}
+		\end{figure}				
+
+		\begin{figure}
+			\includegraphics[width=17cm, height=10cm]{siswa.png}
+			\caption{\emph{User Interface} Bagian Siswa}
+		\end{figure}
 
 	
 
